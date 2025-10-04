@@ -1,0 +1,396 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Navigation */
+
+.containerhero {
+  background: url("images/Object.png") no-repeat center center/cover;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  height: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Hero Section */
+.containerfirstsection {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,30,0.9));
+}
+
+.containertext h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.tags {
+  margin-bottom: 20px;
+}
+
+.tags span {
+  margin: 0 10px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: beige;
+}
+
+button {
+  background: linear-gradient(to right, #e056fd, #9b59b6);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Pros Section */
+.containerpros {
+  margin-top: 80px;
+}
+
+.containerpros h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: whitesmoke;
+}
+
+.highlight {
+  color: #a66cff;
+}
+
+.pros-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.pro {
+  text-align: center;
+  max-width: 200px;
+}
+
+.pro img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.pro h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.pro p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* containerquote Section */
+
+.containerquote{
+    background-color: rgb(184, 117, 184);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.containerquote div blockquote{
+    font-size: 12px;
+    padding: 30px 0 20px 0;
+}
+
+blockquote h3 p{
+    color: white;
+}
+
+/* Most Popular tutoria Section */
+
+.containerpopular {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 60px 80px;
+    width: 100%;
+}
+
+.containerpopular h2 {
+    font-weight: bold;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.containerpopular h2 span {
+    color: #9b59b6; /* purple color for 'popular' */
+}
+
+.populartutorials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+
+.smiletypes {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.smiletypes:hover {
+    transform: translateY(-5px);
+}
+
+.smiletypes img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.smiletypes h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.smiletypes p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.smilereview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.smilereview img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.smilereview h4 {
+    font-size: 14px;
+    color: #9b59b6;
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars div {
+    color: #f39c12;
+    font-size: 14px;
+}
+
+.stars p {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* End Of Most Popular tutoria Section */
+
+/* Free Membership Section */
+
+.containerfree{
+    background-color: #0A1A33;
+    color: white;
+    text-align: center;   
+    padding: 50px 20px 0 20px;
+}
+
+.containerfree h2{
+    font-weight: bold;  
+    color: white;
+    margin-bottom: 100px;
+}
+
+.containerfree span{
+    color: rgb(184, 117, 184);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.membership{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.membership img{
+    margin-bottom: 40px;
+}
+
+.membership h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.membership p{
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.containerfree button{
+   
+    margin: 50px 0 50px 0;
+}
+
+
+
+/* End Free Membership Section */
+
+/* F.A.Q Section */
+
+.containerfaq{
+    background-color: #f4f4f4;
+    color: black;
+    text-align: center;   
+    padding: 50px 20px 50px 20px;
+}
+
+.containerfaq h2{
+    font-weight: bold;  
+    color: black;
+    margin-bottom: 100px;
+    font-size: 50px;
+    font-style: new times roman;
+}
+
+.faqgrid{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.faqgrid div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+}
+
+.faqgrid h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.faqgrid p{
+    font-size: 14px;
+    color: #333333;
+}
+
+/* End F.A.Q Section */
+
+/* footer */
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0A1A33;
+    color: white;
+    text-align: center; 
+  }
+
+.containerfooter{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    text-align: center;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+footer section{
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+footer img{
+    height: 40px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+footer div i:hover{
+    color: rgb(184, 117, 184);
+    cursor: pointer;
+}
+
+footer p{
+    font-size: 14px;
+    color: #cccccc;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* End footer */
