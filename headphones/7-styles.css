@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+/*--------------Start of what we do container------------*/
+
+
+.Containerniche {
+    text-align: center;
+}
+
+.Containernichehp {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.Containernichehp h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.Containernichehp p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.Containerniches{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 70px auto;
+    
+    gap: 20px;
+}
+
+.Containerniches h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.Containerniches h4{
+    margin-bottom: 20px;
+}
+
+.Containerniches p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/* ====== ANIMATIONS FOR "WHAT WE DO" SECTION ====== */
+
+.Containerniches div {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.Containerniches div:hover {
+    transform: scale(1.1) rotate(3deg);
+    opacity: 0.9;
+}
+
+.Containerniches h1 {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+/*--------------start our result container------------*/
+
+.hero2container{
+ background: url(img/headphones_hero_2.jpg) no-repeat center center/cover;
+ min-height: 100vh; 
+}
+
+.hero2containerhp{
+    color: whitesmoke;
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    padding-top: 150px;
+}
+
+.hero2containerhp h1{
+ margin-bottom: 30px;
+}
+
+.pentagon-container {
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.pentagon-item {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.pentagon-shape {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    padding-top: 40px;
+    background: linear-gradient(135deg, #f35742, #eb4141);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.pentagon-shape .content {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.description {
+    color: #e9dada;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* ====== ANIMATIONS FOR "OUR RESULTS" SECTION ====== */
+
+.pentagon-shape {
+    transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
+}
+
+.pentagon-shape:hover {
+    transform: rotateY(360deg) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    opacity: 0.95;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply gentle floating to all pentagons */
+.pentagon-shape {
+    animation: floating 4s ease-in-out infinite;
+}
+
+
+.Containerniches div, .pentagon-shape {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.Containerniches div:nth-child(1) { animation-delay: 0.2s; }
+.Containerniches div:nth-child(2) { animation-delay: 0.4s; }
+.Containerniches div:nth-child(3) { animation-delay: 0.6s; }
+.Containerniches div:nth-child(4) { animation-delay: 0.8s; }
+
+.pentagon-shape:nth-child(1) { animation-delay: 0.3s; }
+.pentagon-shape:nth-child(2) { animation-delay: 0.5s; }
+.pentagon-shape:nth-child(3) { animation-delay: 0.7s; }
+.pentagon-shape:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,365 @@
+/* ================== GLOBAL RESET ================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================== HERO SECTION ================== */
+.herocontainer {
+  background: url(img/headphones_hero_1.jpg) no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.herocontainer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: relative;
+}
+
+.logo {
+  height: 30px;
+}
+
+/* ===== NAVIGATION LINKS ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #eb4141;
+}
+
+/* ===== HAMBURGER BUTTON ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger active animation */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* ================== HERO TEXT ================== */
+.introcontainer {
+  text-align: center;
+  padding: 200px 20px 60px;
+}
+
+.introcontainer h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.introcontainer p {
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.butt {
+  background: rgb(221, 83, 83);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 40px 0px 10px 0px;
+}
+
+.butt:hover {
+  background: rgb(145, 68, 68);
+}
+
+.writeupcontainer {
+  text-align: center;
+  color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+/* ================== WHAT WE DO ================== */
+.Containerniche {
+  text-align: center;
+}
+
+.Containernichehp {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.Containernichehp h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.Containernichehp p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.Containerniches {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: 70px auto;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Containerniches h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.Containerniches h4 {
+  margin-bottom: 20px;
+}
+
+.Containerniches p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/* ================== OUR RESULTS ================== */
+.hero2container {
+  background: url(img/headphones_hero_2.jpg) no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.hero2containerhp {
+  color: whitesmoke;
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+  padding-top: 150px;
+}
+
+.hero2containerhp h1 {
+  margin-bottom: 30px;
+}
+
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.pentagon-item {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.pentagon-shape {
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  padding-top: 40px;
+  background: linear-gradient(135deg, #f35742, #eb4141);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.pentagon-shape .content {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  color: #e9dada;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* ================== CONTACT ================== */
+.contactus {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contactus h1 {
+  margin: 50px 0px;
+}
+
+.inputtext {
+  margin: 20px 0;
+}
+
+input {
+  width: 30vw;
+  height: 5vh;
+}
+
+textarea {
+  width: 30vw;
+  height: 20vh;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta button {
+  background: rgb(243, 68, 68);
+  color: rgb(245, 241, 241);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 25px auto;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  background-color: rgb(4, 4, 34);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logoicon {
+  display: flex;
+  justify-content: space-around;
+  line-height: 5em;
+}
+
+.icons img {
+  background: #e9dada;
+  border-radius: 60px;
+  height: 30px;
+  width: 30px;
+}
+
+footer p {
+  color: #e9dada;
+}
+
+/* ================== RESPONSIVE STYLES ================== */
+
+/* --- Tablets (≤768px) --- */
+@media (max-width: 768px) {
+  .introcontainer h1 {
+    font-size: 35px;
+  }
+
+  .Containerniches {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* --- Mobile (≤480px) --- */
+@media (max-width: 480px) {
+  .herocontainer nav {
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-radius: 0 0 0 15px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .introcontainer {
+    padding: 150px 10px 50px;
+  }
+
+  .introcontainer h1 {
+    font-size: 28px;
+  }
+
+  .introcontainer p {
+    font-size: 16px;
+  }
+
+  input, textarea {
+    width: 80vw;
+  }
+
+  .logoicon {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

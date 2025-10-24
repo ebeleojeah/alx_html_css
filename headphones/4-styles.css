@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/*--------------Start of footer------------*/
+
+footer{
+    background-color: rgb(4, 4, 34);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logoicon{
+    display: flex;
+    justify-content: space-around;
+    line-height: 5em;
+}
+
+.icons img{
+    background: #e9dada;
+    border-radius: 60px;
+    height: 30px;
+    width: 30px;
+}
+
+footer p{
+    color: #e9dada;
+}
